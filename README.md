@@ -95,7 +95,6 @@ HumanEval JSON
 
 ```
 llm4se/
-├── 📄 paper.pdf                  # Published paper (LLM4SE 2026)
 ├── 📊 data/
 │   └── Resualt.xlsx              # Full results dataset (340 solutions × 9 metrics)
 ├── 🖼️ figures/                   # All paper figures (PNG)
