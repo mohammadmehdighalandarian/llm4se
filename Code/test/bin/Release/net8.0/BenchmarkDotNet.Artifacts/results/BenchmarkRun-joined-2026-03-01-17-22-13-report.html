@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset='utf-8' />
+<title>BenchmarkRun-joined-2026-03-01-17-22-13</title>
+
+<style type="text/css">
+	table { border-collapse: collapse; display: block; width: 100%; overflow: auto; }
+	td, th { padding: 6px 13px; border: 1px solid #ddd; text-align: right; }
+	tr { background-color: #fff; border-top: 1px solid #ccc; }
+	tr:nth-child(even) { background: #f8f8f8; }
+</style>
+</head>
+<body>
+<pre><code>
+BenchmarkDotNet v0.15.8, Windows 11 (10.0.26200.7462/25H2/2025Update/HudsonValley2)
+Intel Core i3-4130 CPU 3.40GHz (Haswell), 1 CPU, 4 logical and 2 physical cores
+.NET SDK 10.0.100
+  [Host]     : .NET 8.0.22 (8.0.22, 8.0.2225.52707), X64 RyuJIT x86-64-v3 [AttachedDebugger]
+  DefaultJob : .NET 8.0.22 (8.0.22, 8.0.2225.52707), X64 RyuJIT x86-64-v3
+</code></pre>
+<pre><code></code></pre>
+
+<table>
+<thead><tr><th>Namespace     </th><th>Method</th><th>N</th><th>Mean             </th><th>Error        </th><th>StdDev       </th><th>Median           </th><th>Ratio</th><th>RatioSD</th><th>Rank</th><th>Gen0</th><th>Gen1</th><th>Gen2</th><th>Allocated</th><th>Alloc Ratio</th>
+</tr>
+</thead><tbody><tr><td>Benchmarks.csharp_19</td><td>Grok</td><td>100</td><td>0.0012 ns</td><td>0.0029 ns</td><td>0.0026 ns</td><td>0.0000 ns</td><td>?</td><td>?</td><td>1</td><td>-</td><td>-</td><td>-</td><td>-</td><td>?</td>
+</tr><tr><td>Benchmarks.csharp_19</td><td>Gemini</td><td>100</td><td>0.0066 ns</td><td>0.0092 ns</td><td>0.0086 ns</td><td>0.0037 ns</td><td>?</td><td>?</td><td>2</td><td>-</td><td>-</td><td>-</td><td>-</td><td>?</td>
+</tr><tr><td>Benchmarks.csharp_19</td><td>GPT</td><td>100</td><td>0.0089 ns</td><td>0.0111 ns</td><td>0.0098 ns</td><td>0.0052 ns</td><td>?</td><td>?</td><td>3</td><td>-</td><td>-</td><td>-</td><td>-</td><td>?</td>
+</tr><tr><td>Benchmarks.csharp_19</td><td>Claude</td><td>100</td><td>0.0156 ns</td><td>0.0177 ns</td><td>0.0157 ns</td><td>0.0133 ns</td><td>?</td><td>?</td><td>4</td><td>-</td><td>-</td><td>-</td><td>-</td><td>?</td>
+</tr><tr><td>Benchmarks.csharp_16</td><td>Grok</td><td>100</td><td>51.6885 ns</td><td>0.3877 ns</td><td>0.3437 ns</td><td>51.6426 ns</td><td>?</td><td>?</td><td>5</td><td>-</td><td>-</td><td>-</td><td>-</td><td>?</td>
+</tr><tr><td>Benchmarks.csharp_16</td><td>Gemini</td><td>100</td><td>51.9947 ns</td><td>0.8280 ns</td><td>0.8503 ns</td><td>51.7809 ns</td><td>?</td><td>?</td><td>5</td><td>-</td><td>-</td><td>-</td><td>-</td><td>?</td>
+</tr><tr><td>Benchmarks.csharp_16</td><td>GPT</td><td>100</td><td>52.1556 ns</td><td>1.0806 ns</td><td>1.1562 ns</td><td>51.5857 ns</td><td>?</td><td>?</td><td>5</td><td>-</td><td>-</td><td>-</td><td>-</td><td>?</td>
+</tr><tr><td>Benchmarks.csharp_14</td><td>Gemini</td><td>100</td><td>96.0876 ns</td><td>0.4597 ns</td><td>0.4300 ns</td><td>96.0988 ns</td><td>?</td><td>?</td><td>6</td><td>-</td><td>-</td><td>-</td><td>-</td><td>?</td>
+</tr><tr><td>Benchmarks.csharp_14</td><td>Grok</td><td>100</td><td>96.4530 ns</td><td>0.9481 ns</td><td>0.8404 ns</td><td>96.4062 ns</td><td>?</td><td>?</td><td>6</td><td>-</td><td>-</td><td>-</td><td>-</td><td>?</td>
+</tr><tr><td>Benchmarks.csharp_14</td><td>GPT</td><td>100</td><td>96.5230 ns</td><td>0.5096 ns</td><td>0.4767 ns</td><td>96.5054 ns</td><td>?</td><td>?</td><td>6</td><td>-</td><td>-</td><td>-</td><td>-</td><td>?</td>
+</tr><tr><td>Benchmarks.csharp_14</td><td>Claude</td><td>100</td><td>98.3153 ns</td><td>1.5945 ns</td><td>1.4915 ns</td><td>98.1374 ns</td><td>?</td><td>?</td><td>6</td><td>-</td><td>-</td><td>-</td><td>-</td><td>?</td>
+</tr><tr><td>Benchmarks.csharp_16</td><td>Claude</td><td>100</td><td>157.0344 ns</td><td>1.4073 ns</td><td>1.3164 ns</td><td>157.3657 ns</td><td>?</td><td>?</td><td>7</td><td>0.4590</td><td>-</td><td>-</td><td>720 B</td><td>?</td>
+</tr><tr><td>Benchmarks.csharp_18</td><td>Gemini</td><td>100</td><td>277.1878 ns</td><td>1.8487 ns</td><td>1.6388 ns</td><td>276.8228 ns</td><td>?</td><td>?</td><td>8</td><td>0.0815</td><td>-</td><td>-</td><td>128 B</td><td>?</td>
+</tr><tr><td>Benchmarks.csharp_18</td><td>GPT</td><td>100</td><td>277.3513 ns</td><td>1.4702 ns</td><td>1.2277 ns</td><td>277.0000 ns</td><td>?</td><td>?</td><td>8</td><td>0.0815</td><td>-</td><td>-</td><td>128 B</td><td>?</td>
+</tr><tr><td>Benchmarks.csharp_18</td><td>Claude</td><td>100</td><td>278.0211 ns</td><td>2.4412 ns</td><td>2.1641 ns</td><td>277.9986 ns</td><td>?</td><td>?</td><td>8</td><td>0.0815</td><td>-</td><td>-</td><td>128 B</td><td>?</td>
+</tr><tr><td>Benchmarks.csharp_18</td><td>Grok</td><td>100</td><td>278.7676 ns</td><td>1.5710 ns</td><td>1.4695 ns</td><td>278.7091 ns</td><td>?</td><td>?</td><td>8</td><td>0.0815</td><td>-</td><td>-</td><td>128 B</td><td>?</td>
+</tr><tr><td>Benchmarks.csharp_15</td><td>Grok</td><td>100</td><td>284.0811 ns</td><td>2.1336 ns</td><td>1.7817 ns</td><td>284.0803 ns</td><td>?</td><td>?</td><td>8</td><td>0.0153</td><td>-</td><td>-</td><td>24 B</td><td>?</td>
+</tr><tr><td>Benchmarks.csharp_17</td><td>GPT</td><td>100</td><td>298.1495 ns</td><td>3.3078 ns</td><td>3.0941 ns</td><td>297.3797 ns</td><td>?</td><td>?</td><td>9</td><td>0.2904</td><td>-</td><td>-</td><td>456 B</td><td>?</td>
+</tr><tr><td>Benchmarks.csharp_17</td><td>Grok</td><td>100</td><td>611.6177 ns</td><td>9.5024 ns</td><td>8.4236 ns</td><td>611.0742 ns</td><td>?</td><td>?</td><td>10</td><td>0.4635</td><td>-</td><td>-</td><td>728 B</td><td>?</td>
+</tr><tr><td>Benchmarks.csharp_15</td><td>GPT</td><td>100</td><td>638.2000 ns</td><td>12.3399 ns</td><td>10.9390 ns</td><td>634.9072 ns</td><td>?</td><td>?</td><td>10</td><td>0.2851</td><td>-</td><td>-</td><td>448 B</td><td>?</td>
+</tr><tr><td>Benchmarks.csharp_20</td><td>GPT</td><td>100</td><td>1,726.3643 ns</td><td>20.5437 ns</td><td>19.2165 ns</td><td>1,726.6455 ns</td><td>?</td><td>?</td><td>11</td><td>0.2537</td><td>-</td><td>-</td><td>400 B</td><td>?</td>
+</tr><tr><td>Benchmarks.csharp_20</td><td>Claude</td><td>100</td><td>1,731.9548 ns</td><td>15.9616 ns</td><td>14.1495 ns</td><td>1,732.8102 ns</td><td>?</td><td>?</td><td>11</td><td>0.2537</td><td>-</td><td>-</td><td>400 B</td><td>?</td>
+</tr><tr><td>Benchmarks.csharp_20</td><td>Gemini</td><td>100</td><td>1,737.8583 ns</td><td>24.1624 ns</td><td>22.6015 ns</td><td>1,731.3690 ns</td><td>?</td><td>?</td><td>11</td><td>0.2537</td><td>-</td><td>-</td><td>400 B</td><td>?</td>
+</tr><tr><td>Benchmarks.csharp_20</td><td>Grok</td><td>100</td><td>1,742.4818 ns</td><td>11.7363 ns</td><td>10.9782 ns</td><td>1,740.6207 ns</td><td>?</td><td>?</td><td>11</td><td>0.2537</td><td>-</td><td>-</td><td>400 B</td><td>?</td>
+</tr><tr><td>Benchmarks.csharp_17</td><td>Gemini</td><td>100</td><td>1,993.5904 ns</td><td>28.1396 ns</td><td>24.9451 ns</td><td>1,989.8777 ns</td><td>?</td><td>?</td><td>12</td><td>0.1144</td><td>-</td><td>-</td><td>184 B</td><td>?</td>
+</tr><tr><td>Benchmarks.csharp_17</td><td>Claude</td><td>100</td><td>2,068.3085 ns</td><td>16.5621 ns</td><td>15.4922 ns</td><td>2,067.8734 ns</td><td>?</td><td>?</td><td>12</td><td>0.1144</td><td>-</td><td>-</td><td>184 B</td><td>?</td>
+</tr><tr><td>Benchmarks.csharp_13</td><td>Claude</td><td>100</td><td>2,431.8924 ns</td><td>23.1772 ns</td><td>20.5460 ns</td><td>2,431.5521 ns</td><td>?</td><td>?</td><td>13</td><td>3.8185</td><td>-</td><td>-</td><td>6000 B</td><td>?</td>
+</tr><tr><td>Benchmarks.csharp_13</td><td>GPT</td><td>100</td><td>2,440.1734 ns</td><td>47.0012 ns</td><td>41.6653 ns</td><td>2,431.5329 ns</td><td>?</td><td>?</td><td>13</td><td>3.8185</td><td>-</td><td>-</td><td>6000 B</td><td>?</td>
+</tr><tr><td>Benchmarks.csharp_13</td><td>Gemini</td><td>100</td><td>2,443.1495 ns</td><td>43.4664 ns</td><td>36.2964 ns</td><td>2,430.0163 ns</td><td>?</td><td>?</td><td>13</td><td>3.8185</td><td>-</td><td>-</td><td>6000 B</td><td>?</td>
+</tr><tr><td>Benchmarks.csharp_13</td><td>Grok</td><td>100</td><td>2,450.1182 ns</td><td>37.9398 ns</td><td>35.4889 ns</td><td>2,438.7333 ns</td><td>?</td><td>?</td><td>13</td><td>3.8185</td><td>-</td><td>-</td><td>6000 B</td><td>?</td>
+</tr><tr><td>Benchmarks.csharp_15</td><td>Claude</td><td>100</td><td>2,612.9570 ns</td><td>22.3731 ns</td><td>19.8332 ns</td><td>2,608.1656 ns</td><td>?</td><td>?</td><td>14</td><td>1.2283</td><td>-</td><td>-</td><td>1928 B</td><td>?</td>
+</tr><tr><td>Benchmarks.csharp_15</td><td>Gemini</td><td>100</td><td>2,686.3063 ns</td><td>27.5271 ns</td><td>24.4021 ns</td><td>2,692.6571 ns</td><td>?</td><td>?</td><td>14</td><td>1.2283</td><td>-</td><td>-</td><td>1928 B</td><td>?</td>
+</tr><tr><td>Benchmarks.csharp_12</td><td>Grok</td><td>100</td><td>5,399.1322 ns</td><td>37.8058 ns</td><td>35.3636 ns</td><td>5,394.6228 ns</td><td>?</td><td>?</td><td>15</td><td>0.2670</td><td>-</td><td>-</td><td>424 B</td><td>?</td>
+</tr><tr><td>Benchmarks.csharp_12</td><td>Gemini</td><td>100</td><td>9,478.5268 ns</td><td>69.6892 ns</td><td>65.1873 ns</td><td>9,470.8893 ns</td><td>?</td><td>?</td><td>16</td><td>-</td><td>-</td><td>-</td><td>-</td><td>?</td>
+</tr><tr><td>Benchmarks.csharp_12</td><td>GPT</td><td>100</td><td>11,797.7722 ns</td><td>155.5531 ns</td><td>137.8938 ns</td><td>11,787.5336 ns</td><td>?</td><td>?</td><td>17</td><td>-</td><td>-</td><td>-</td><td>-</td><td>?</td>
+</tr><tr><td>Benchmarks.csharp_12</td><td>Claude</td><td>100</td><td>271,657.1965 ns</td><td>2,479.0911 ns</td><td>2,070.1534 ns</td><td>271,672.7051 ns</td><td>?</td><td>?</td><td>18</td><td>-</td><td>-</td><td>-</td><td>-</td><td>?</td>
+</tr><tr><td>Benchmarks.csharp_19</td><td>Claude</td><td>1000</td><td>0.0054 ns</td><td>0.0075 ns</td><td>0.0070 ns</td><td>0.0012 ns</td><td>?</td><td>?</td><td>1</td><td>-</td><td>-</td><td>-</td><td>-</td><td>?</td>
+</tr><tr><td>Benchmarks.csharp_19</td><td>Gemini</td><td>1000</td><td>0.0074 ns</td><td>0.0126 ns</td><td>0.0106 ns</td><td>0.0031 ns</td><td>?</td><td>?</td><td>2</td><td>-</td><td>-</td><td>-</td><td>-</td><td>?</td>
+</tr><tr><td>Benchmarks.csharp_19</td><td>GPT</td><td>1000</td><td>0.0076 ns</td><td>0.0061 ns</td><td>0.0057 ns</td><td>0.0064 ns</td><td>?</td><td>?</td><td>3</td><td>-</td><td>-</td><td>-</td><td>-</td><td>?</td>
+</tr><tr><td>Benchmarks.csharp_19</td><td>Grok</td><td>1000</td><td>0.0131 ns</td><td>0.0137 ns</td><td>0.0128 ns</td><td>0.0088 ns</td><td>?</td><td>?</td><td>4</td><td>-</td><td>-</td><td>-</td><td>-</td><td>?</td>
+</tr><tr><td>Benchmarks.csharp_16</td><td>Grok</td><td>1000</td><td>417.2540 ns</td><td>2.8999 ns</td><td>2.5707 ns</td><td>416.8130 ns</td><td>?</td><td>?</td><td>5</td><td>-</td><td>-</td><td>-</td><td>-</td><td>?</td>
+</tr><tr><td>Benchmarks.csharp_16</td><td>Gemini</td><td>1000</td><td>417.4698 ns</td><td>2.2910 ns</td><td>1.9131 ns</td><td>417.3345 ns</td><td>?</td><td>?</td><td>5</td><td>-</td><td>-</td><td>-</td><td>-</td><td>?</td>
+</tr><tr><td>Benchmarks.csharp_16</td><td>GPT</td><td>1000</td><td>417.5326 ns</td><td>3.1123 ns</td><td>2.9113 ns</td><td>416.5901 ns</td><td>?</td><td>?</td><td>5</td><td>-</td><td>-</td><td>-</td><td>-</td><td>?</td>
+</tr><tr><td>Benchmarks.csharp_16</td><td>Claude</td><td>1000</td><td>758.0535 ns</td><td>14.4987 ns</td><td>12.8527 ns</td><td>756.7493 ns</td><td>?</td><td>?</td><td>6</td><td>3.9005</td><td>-</td><td>-</td><td>6120 B</td><td>?</td>
+</tr><tr><td>Benchmarks.csharp_14</td><td>GPT</td><td>1000</td><td>916.0744 ns</td><td>5.2326 ns</td><td>4.8945 ns</td><td>915.1935 ns</td><td>?</td><td>?</td><td>7</td><td>-</td><td>-</td><td>-</td><td>-</td><td>?</td>
+</tr><tr><td>Benchmarks.csharp_14</td><td>Grok</td><td>1000</td><td>916.1496 ns</td><td>4.7530 ns</td><td>4.4459 ns</td><td>916.3632 ns</td><td>?</td><td>?</td><td>7</td><td>-</td><td>-</td><td>-</td><td>-</td><td>?</td>
+</tr><tr><td>Benchmarks.csharp_14</td><td>Gemini</td><td>1000</td><td>917.3404 ns</td><td>5.9574 ns</td><td>5.5725 ns</td><td>916.5866 ns</td><td>?</td><td>?</td><td>7</td><td>-</td><td>-</td><td>-</td><td>-</td><td>?</td>
+</tr><tr><td>Benchmarks.csharp_14</td><td>Claude</td><td>1000</td><td>920.8377 ns</td><td>16.1806 ns</td><td>13.5116 ns</td><td>913.7354 ns</td><td>?</td><td>?</td><td>7</td><td>-</td><td>-</td><td>-</td><td>-</td><td>?</td>
+</tr><tr><td>Benchmarks.csharp_18</td><td>GPT</td><td>1000</td><td>2,389.8739 ns</td><td>13.6756 ns</td><td>12.1231 ns</td><td>2,389.1634 ns</td><td>?</td><td>?</td><td>8</td><td>0.0801</td><td>-</td><td>-</td><td>128 B</td><td>?</td>
+</tr><tr><td>Benchmarks.csharp_18</td><td>Gemini</td><td>1000</td><td>2,398.1337 ns</td><td>18.1349 ns</td><td>16.0761 ns</td><td>2,395.2255 ns</td><td>?</td><td>?</td><td>8</td><td>0.0801</td><td>-</td><td>-</td><td>128 B</td><td>?</td>
+</tr><tr><td>Benchmarks.csharp_18</td><td>Grok</td><td>1000</td><td>2,410.1605 ns</td><td>45.6468 ns</td><td>40.4647 ns</td><td>2,390.8934 ns</td><td>?</td><td>?</td><td>8</td><td>0.0801</td><td>-</td><td>-</td><td>128 B</td><td>?</td>
+</tr><tr><td>Benchmarks.csharp_18</td><td>Claude</td><td>1000</td><td>2,410.9727 ns</td><td>33.9551 ns</td><td>28.3541 ns</td><td>2,407.4135 ns</td><td>?</td><td>?</td><td>8</td><td>0.0801</td><td>-</td><td>-</td><td>128 B</td><td>?</td>
+</tr><tr><td>Benchmarks.csharp_17</td><td>GPT</td><td>1000</td><td>2,421.8175 ns</td><td>34.8820 ns</td><td>32.6287 ns</td><td>2,420.8561 ns</td><td>?</td><td>?</td><td>8</td><td>2.3613</td><td>-</td><td>-</td><td>3712 B</td><td>?</td>
+</tr><tr><td>Benchmarks.csharp_15</td><td>Grok</td><td>1000</td><td>4,012.6040 ns</td><td>52.7653 ns</td><td>46.7751 ns</td><td>3,998.8781 ns</td><td>?</td><td>?</td><td>9</td><td>0.0153</td><td>-</td><td>-</td><td>24 B</td><td>?</td>
+</tr><tr><td>Benchmarks.csharp_17</td><td>Grok</td><td>1000</td><td>5,546.8671 ns</td><td>41.1630 ns</td><td>34.3730 ns</td><td>5,554.9461 ns</td><td>?</td><td>?</td><td>10</td><td>2.6703</td><td>-</td><td>-</td><td>4192 B</td><td>?</td>
+</tr><tr><td>Benchmarks.csharp_20</td><td>Grok</td><td>1000</td><td>15,778.0315 ns</td><td>105.7259 ns</td><td>93.7233 ns</td><td>15,755.9982 ns</td><td>?</td><td>?</td><td>11</td><td>0.2441</td><td>-</td><td>-</td><td>400 B</td><td>?</td>
+</tr><tr><td>Benchmarks.csharp_20</td><td>Claude</td><td>1000</td><td>15,837.4732 ns</td><td>137.6777 ns</td><td>122.0477 ns</td><td>15,825.3433 ns</td><td>?</td><td>?</td><td>11</td><td>0.2441</td><td>-</td><td>-</td><td>400 B</td><td>?</td>
+</tr><tr><td>Benchmarks.csharp_20</td><td>GPT</td><td>1000</td><td>15,849.9906 ns</td><td>131.5280 ns</td><td>116.5961 ns</td><td>15,821.3959 ns</td><td>?</td><td>?</td><td>11</td><td>0.2441</td><td>-</td><td>-</td><td>400 B</td><td>?</td>
+</tr><tr><td>Benchmarks.csharp_20</td><td>Gemini</td><td>1000</td><td>15,866.8027 ns</td><td>125.5768 ns</td><td>117.4646 ns</td><td>15,910.7376 ns</td><td>?</td><td>?</td><td>11</td><td>0.2441</td><td>-</td><td>-</td><td>400 B</td><td>?</td>
+</tr><tr><td>Benchmarks.csharp_15</td><td>GPT</td><td>1000</td><td>16,116.6888 ns</td><td>145.8030 ns</td><td>136.3843 ns</td><td>16,077.8259 ns</td><td>?</td><td>?</td><td>11</td><td>2.5635</td><td>-</td><td>-</td><td>4048 B</td><td>?</td>
+</tr><tr><td>Benchmarks.csharp_17</td><td>Gemini</td><td>1000</td><td>18,240.8844 ns</td><td>306.9344 ns</td><td>376.9430 ns</td><td>18,202.6016 ns</td><td>?</td><td>?</td><td>12</td><td>1.0376</td><td>-</td><td>-</td><td>1640 B</td><td>?</td>
+</tr><tr><td>Benchmarks.csharp_17</td><td>Claude</td><td>1000</td><td>18,246.3767 ns</td><td>217.3550 ns</td><td>192.6795 ns</td><td>18,215.3290 ns</td><td>?</td><td>?</td><td>12</td><td>1.0376</td><td>-</td><td>-</td><td>1640 B</td><td>?</td>
+</tr><tr><td>Benchmarks.csharp_13</td><td>Claude</td><td>1000</td><td>22,783.6185 ns</td><td>240.3333 ns</td><td>224.8079 ns</td><td>22,753.5965 ns</td><td>?</td><td>?</td><td>13</td><td>37.0178</td><td>-</td><td>-</td><td>58664 B</td><td>?</td>
+</tr><tr><td>Benchmarks.csharp_13</td><td>GPT</td><td>1000</td><td>22,863.9917 ns</td><td>292.2556 ns</td><td>259.0769 ns</td><td>22,778.1097 ns</td><td>?</td><td>?</td><td>13</td><td>37.0178</td><td>-</td><td>-</td><td>58664 B</td><td>?</td>
+</tr><tr><td>Benchmarks.csharp_13</td><td>Gemini</td><td>1000</td><td>22,967.2124 ns</td><td>210.7131 ns</td><td>197.1011 ns</td><td>22,945.6650 ns</td><td>?</td><td>?</td><td>13</td><td>37.0178</td><td>-</td><td>-</td><td>58664 B</td><td>?</td>
+</tr><tr><td>Benchmarks.csharp_13</td><td>Grok</td><td>1000</td><td>23,405.1015 ns</td><td>447.7129 ns</td><td>479.0478 ns</td><td>23,334.4620 ns</td><td>?</td><td>?</td><td>13</td><td>37.0178</td><td>-</td><td>-</td><td>58664 B</td><td>?</td>
+</tr><tr><td>Benchmarks.csharp_15</td><td>Claude</td><td>1000</td><td>66,415.8671 ns</td><td>539.1413 ns</td><td>504.3131 ns</td><td>66,342.3279 ns</td><td>?</td><td>?</td><td>14</td><td>10.3760</td><td>-</td><td>-</td><td>16328 B</td><td>?</td>
+</tr><tr><td>Benchmarks.csharp_15</td><td>Gemini</td><td>1000</td><td>67,165.0826 ns</td><td>838.0436 ns</td><td>783.9065 ns</td><td>67,100.5188 ns</td><td>?</td><td>?</td><td>14</td><td>10.3760</td><td>-</td><td>-</td><td>16328 B</td><td>?</td>
+</tr><tr><td>Benchmarks.csharp_12</td><td>Grok</td><td>1000</td><td>472,307.6270 ns</td><td>2,540.6927 ns</td><td>2,376.5655 ns</td><td>471,601.2207 ns</td><td>?</td><td>?</td><td>15</td><td>2.4414</td><td>-</td><td>-</td><td>4024 B</td><td>?</td>
+</tr><tr><td>Benchmarks.csharp_12</td><td>Gemini</td><td>1000</td><td>876,798.2561 ns</td><td>14,175.2995 ns</td><td>12,566.0338 ns</td><td>870,488.8184 ns</td><td>?</td><td>?</td><td>16</td><td>-</td><td>-</td><td>-</td><td>-</td><td>?</td>
+</tr><tr><td>Benchmarks.csharp_12</td><td>GPT</td><td>1000</td><td>1,020,844.6094 ns</td><td>9,735.8749 ns</td><td>9,106.9434 ns</td><td>1,021,573.2422 ns</td><td>?</td><td>?</td><td>17</td><td>-</td><td>-</td><td>-</td><td>-</td><td>?</td>
+</tr><tr><td>Benchmarks.csharp_12</td><td>Claude</td><td>1000</td><td>259,810,716.6667 ns</td><td>2,140,054.9201 ns</td><td>2,001,808.7010 ns</td><td>259,839,200.0000 ns</td><td>?</td><td>?</td><td>18</td><td>-</td><td>-</td><td>-</td><td>-</td><td>?</td>
+</tr><tr><td>Benchmarks.csharp_19</td><td>Claude</td><td>10000</td><td>0.0044 ns</td><td>0.0067 ns</td><td>0.0063 ns</td><td>0.0000 ns</td><td>?</td><td>?</td><td>1</td><td>-</td><td>-</td><td>-</td><td>-</td><td>?</td>
+</tr><tr><td>Benchmarks.csharp_19</td><td>Gemini</td><td>10000</td><td>0.0058 ns</td><td>0.0079 ns</td><td>0.0074 ns</td><td>0.0023 ns</td><td>?</td><td>?</td><td>2</td><td>-</td><td>-</td><td>-</td><td>-</td><td>?</td>
+</tr><tr><td>Benchmarks.csharp_19</td><td>Grok</td><td>10000</td><td>0.0134 ns</td><td>0.0140 ns</td><td>0.0109 ns</td><td>0.0131 ns</td><td>?</td><td>?</td><td>3</td><td>-</td><td>-</td><td>-</td><td>-</td><td>?</td>
+</tr><tr><td>Benchmarks.csharp_19</td><td>GPT</td><td>10000</td><td>0.0269 ns</td><td>0.0389 ns</td><td>0.0363 ns</td><td>0.0072 ns</td><td>?</td><td>?</td><td>3</td><td>-</td><td>-</td><td>-</td><td>-</td><td>?</td>
+</tr><tr><td>Benchmarks.csharp_16</td><td>Gemini</td><td>10000</td><td>4,079.7319 ns</td><td>34.2807 ns</td><td>30.3890 ns</td><td>4,075.6058 ns</td><td>?</td><td>?</td><td>4</td><td>-</td><td>-</td><td>-</td><td>-</td><td>?</td>
+</tr><tr><td>Benchmarks.csharp_16</td><td>GPT</td><td>10000</td><td>4,085.8658 ns</td><td>37.6654 ns</td><td>35.2323 ns</td><td>4,078.4954 ns</td><td>?</td><td>?</td><td>4</td><td>-</td><td>-</td><td>-</td><td>-</td><td>?</td>
+</tr><tr><td>Benchmarks.csharp_16</td><td>Grok</td><td>10000</td><td>4,106.0782 ns</td><td>28.4625 ns</td><td>23.7675 ns</td><td>4,105.9036 ns</td><td>?</td><td>?</td><td>4</td><td>-</td><td>-</td><td>-</td><td>-</td><td>?</td>
+</tr><tr><td>Benchmarks.csharp_16</td><td>Claude</td><td>10000</td><td>8,440.6538 ns</td><td>71.8417 ns</td><td>63.6858 ns</td><td>8,436.6966 ns</td><td>?</td><td>?</td><td>5</td><td>37.9639</td><td>-</td><td>-</td><td>60120 B</td><td>?</td>
+</tr><tr><td>Benchmarks.csharp_14</td><td>Gemini</td><td>10000</td><td>9,097.9619 ns</td><td>60.5098 ns</td><td>56.6009 ns</td><td>9,096.6019 ns</td><td>?</td><td>?</td><td>6</td><td>-</td><td>-</td><td>-</td><td>-</td><td>?</td>
+</tr><tr><td>Benchmarks.csharp_14</td><td>Grok</td><td>10000</td><td>9,135.9514 ns</td><td>70.7671 ns</td><td>66.1956 ns</td><td>9,152.0370 ns</td><td>?</td><td>?</td><td>6</td><td>-</td><td>-</td><td>-</td><td>-</td><td>?</td>
+</tr><tr><td>Benchmarks.csharp_14</td><td>Claude</td><td>10000</td><td>9,137.9240 ns</td><td>148.0326 ns</td><td>138.4698 ns</td><td>9,087.7197 ns</td><td>?</td><td>?</td><td>6</td><td>-</td><td>-</td><td>-</td><td>-</td><td>?</td>
+</tr><tr><td>Benchmarks.csharp_14</td><td>GPT</td><td>10000</td><td>9,156.2499 ns</td><td>107.1517 ns</td><td>89.4766 ns</td><td>9,149.1661 ns</td><td>?</td><td>?</td><td>6</td><td>-</td><td>-</td><td>-</td><td>-</td><td>?</td>
+</tr><tr><td>Benchmarks.csharp_17</td><td>GPT</td><td>10000</td><td>23,390.1901 ns</td><td>324.5699 ns</td><td>287.7228 ns</td><td>23,350.6500 ns</td><td>?</td><td>?</td><td>7</td><td>22.9797</td><td>-</td><td>-</td><td>36248 B</td><td>?</td>
+</tr><tr><td>Benchmarks.csharp_18</td><td>GPT</td><td>10000</td><td>23,540.3051 ns</td><td>95.5984 ns</td><td>74.6370 ns</td><td>23,546.2067 ns</td><td>?</td><td>?</td><td>7</td><td>0.0610</td><td>-</td><td>-</td><td>128 B</td><td>?</td>
+</tr><tr><td>Benchmarks.csharp_18</td><td>Grok</td><td>10000</td><td>23,625.6698 ns</td><td>136.3031 ns</td><td>127.4980 ns</td><td>23,626.9592 ns</td><td>?</td><td>?</td><td>7</td><td>0.0610</td><td>-</td><td>-</td><td>128 B</td><td>?</td>
+</tr><tr><td>Benchmarks.csharp_18</td><td>Claude</td><td>10000</td><td>23,642.8848 ns</td><td>170.8761 ns</td><td>159.8376 ns</td><td>23,625.5569 ns</td><td>?</td><td>?</td><td>7</td><td>0.0610</td><td>-</td><td>-</td><td>128 B</td><td>?</td>
+</tr><tr><td>Benchmarks.csharp_18</td><td>Gemini</td><td>10000</td><td>23,837.6197 ns</td><td>242.7957 ns</td><td>227.1113 ns</td><td>23,797.2031 ns</td><td>?</td><td>?</td><td>7</td><td>0.0610</td><td>-</td><td>-</td><td>128 B</td><td>?</td>
+</tr><tr><td>Benchmarks.csharp_17</td><td>Grok</td><td>10000</td><td>54,486.9308 ns</td><td>539.1106 ns</td><td>420.9021 ns</td><td>54,569.8730 ns</td><td>?</td><td>?</td><td>8</td><td>20.9961</td><td>-</td><td>-</td><td>33280 B</td><td>?</td>
+</tr><tr><td>Benchmarks.csharp_15</td><td>Grok</td><td>10000</td><td>58,270.2131 ns</td><td>282.0799 ns</td><td>250.0564 ns</td><td>58,303.0670 ns</td><td>?</td><td>?</td><td>9</td><td>-</td><td>-</td><td>-</td><td>24 B</td><td>?</td>
+</tr><tr><td>Benchmarks.csharp_20</td><td>Gemini</td><td>10000</td><td>157,312.7517 ns</td><td>916.7098 ns</td><td>765.4942 ns</td><td>157,254.1504 ns</td><td>?</td><td>?</td><td>10</td><td>0.2441</td><td>-</td><td>-</td><td>400 B</td><td>?</td>
+</tr><tr><td>Benchmarks.csharp_20</td><td>Claude</td><td>10000</td><td>159,019.1982 ns</td><td>2,257.7386 ns</td><td>2,001.4265 ns</td><td>158,905.4199 ns</td><td>?</td><td>?</td><td>10</td><td>0.2441</td><td>-</td><td>-</td><td>400 B</td><td>?</td>
+</tr><tr><td>Benchmarks.csharp_20</td><td>GPT</td><td>10000</td><td>159,063.6858 ns</td><td>2,432.7111 ns</td><td>2,156.5350 ns</td><td>158,273.2910 ns</td><td>?</td><td>?</td><td>10</td><td>0.2441</td><td>-</td><td>-</td><td>400 B</td><td>?</td>
+</tr><tr><td>Benchmarks.csharp_20</td><td>Grok</td><td>10000</td><td>162,442.7416 ns</td><td>3,178.4264 ns</td><td>6,123.7491 ns</td><td>159,454.4434 ns</td><td>?</td><td>?</td><td>10</td><td>0.2441</td><td>-</td><td>-</td><td>400 B</td><td>?</td>
+</tr><tr><td>Benchmarks.csharp_17</td><td>Claude</td><td>10000</td><td>178,897.4478 ns</td><td>1,970.6610 ns</td><td>1,645.5912 ns</td><td>179,198.1689 ns</td><td>?</td><td>?</td><td>11</td><td>10.2539</td><td>-</td><td>-</td><td>16177 B</td><td>?</td>
+</tr><tr><td>Benchmarks.csharp_17</td><td>Gemini</td><td>10000</td><td>184,911.6298 ns</td><td>1,620.2721 ns</td><td>1,436.3290 ns</td><td>184,952.2705 ns</td><td>?</td><td>?</td><td>11</td><td>10.2539</td><td>-</td><td>-</td><td>16177 B</td><td>?</td>
+</tr><tr><td>Benchmarks.csharp_13</td><td>Gemini</td><td>10000</td><td>326,953.0802 ns</td><td>1,574.4719 ns</td><td>1,229.2441 ns</td><td>326,905.1758 ns</td><td>?</td><td>?</td><td>12</td><td>190.4297</td><td>95.2148</td><td>95.2148</td><td>538656 B</td><td>?</td>
+</tr><tr><td>Benchmarks.csharp_13</td><td>GPT</td><td>10000</td><td>327,908.3290 ns</td><td>2,830.1480 ns</td><td>2,363.3017 ns</td><td>327,076.1963 ns</td><td>?</td><td>?</td><td>12</td><td>190.4297</td><td>95.2148</td><td>95.2148</td><td>538656 B</td><td>?</td>
+</tr><tr><td>Benchmarks.csharp_13</td><td>Grok</td><td>10000</td><td>330,336.5885 ns</td><td>2,162.9910 ns</td><td>2,023.2632 ns</td><td>330,324.9023 ns</td><td>?</td><td>?</td><td>12</td><td>190.4297</td><td>95.2148</td><td>95.2148</td><td>538656 B</td><td>?</td>
+</tr><tr><td>Benchmarks.csharp_13</td><td>Claude</td><td>10000</td><td>331,173.4996 ns</td><td>5,563.5916 ns</td><td>6,832.5907 ns</td><td>328,527.6367 ns</td><td>?</td><td>?</td><td>12</td><td>190.4297</td><td>95.2148</td><td>95.2148</td><td>538656 B</td><td>?</td>
+</tr><tr><td>Benchmarks.csharp_15</td><td>GPT</td><td>10000</td><td>479,196.5402 ns</td><td>1,323.3783 ns</td><td>1,173.1404 ns</td><td>479,138.1348 ns</td><td>?</td><td>?</td><td>13</td><td>24.9023</td><td>-</td><td>-</td><td>40048 B</td><td>?</td>
+</tr><tr><td>Benchmarks.csharp_15</td><td>Claude</td><td>10000</td><td>938,636.5234 ns</td><td>4,577.3764 ns</td><td>3,822.3166 ns</td><td>937,653.3203 ns</td><td>?</td><td>?</td><td>14</td><td>98.6328</td><td>-</td><td>-</td><td>160328 B</td><td>?</td>
+</tr><tr><td>Benchmarks.csharp_15</td><td>Gemini</td><td>10000</td><td>979,098.7109 ns</td><td>6,899.9756 ns</td><td>6,454.2414 ns</td><td>977,404.6875 ns</td><td>?</td><td>?</td><td>15</td><td>97.6563</td><td>-</td><td>-</td><td>160328 B</td><td>?</td>
+</tr><tr><td>Benchmarks.csharp_12</td><td>Grok</td><td>10000</td><td>46,017,944.8485 ns</td><td>294,859.6162 ns</td><td>275,811.8681 ns</td><td>45,929,645.4545 ns</td><td>?</td><td>?</td><td>16</td><td>-</td><td>-</td><td>-</td><td>40024 B</td><td>?</td>
+</tr><tr><td>Benchmarks.csharp_12</td><td>Gemini</td><td>10000</td><td>85,321,129.4872 ns</td><td>1,007,065.7065 ns</td><td>840,945.4754 ns</td><td>85,654,583.3333 ns</td><td>?</td><td>?</td><td>17</td><td>-</td><td>-</td><td>-</td><td>-</td><td>?</td>
+</tr><tr><td>Benchmarks.csharp_12</td><td>GPT</td><td>10000</td><td>102,036,494.4444 ns</td><td>1,563,588.7717 ns</td><td>2,974,890.3740 ns</td><td>101,314,050.0000 ns</td><td>?</td><td>?</td><td>18</td><td>-</td><td>-</td><td>-</td><td>-</td><td>?</td>
+</tr><tr><td>Benchmarks.csharp_12</td><td>Claude</td><td>10000</td><td>256,001,462,495.2381 ns</td><td>632,001,509.1327 ns</td><td>752,352,905.8558 ns</td><td>255,955,576,300.0000 ns</td><td>?</td><td>?</td><td>19</td><td>-</td><td>-</td><td>-</td><td>-</td><td>?</td>
+</tr></tbody></table>
+</body>
+</html>

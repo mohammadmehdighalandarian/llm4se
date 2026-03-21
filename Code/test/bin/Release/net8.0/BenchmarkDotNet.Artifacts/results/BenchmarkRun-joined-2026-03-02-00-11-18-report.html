@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset='utf-8' />
+<title>BenchmarkRun-joined-2026-03-02-00-11-18</title>
+
+<style type="text/css">
+	table { border-collapse: collapse; display: block; width: 100%; overflow: auto; }
+	td, th { padding: 6px 13px; border: 1px solid #ddd; text-align: right; }
+	tr { background-color: #fff; border-top: 1px solid #ccc; }
+	tr:nth-child(even) { background: #f8f8f8; }
+</style>
+</head>
+<body>
+<pre><code>
+BenchmarkDotNet v0.15.8, Windows 11 (10.0.26200.7462/25H2/2025Update/HudsonValley2)
+Intel Core i3-4130 CPU 3.40GHz (Haswell), 1 CPU, 4 logical and 2 physical cores
+.NET SDK 10.0.100
+  [Host]     : .NET 8.0.22 (8.0.22, 8.0.2225.52707), X64 RyuJIT x86-64-v3 [AttachedDebugger]
+  DefaultJob : .NET 8.0.22 (8.0.22, 8.0.2225.52707), X64 RyuJIT x86-64-v3
+</code></pre>
+<pre><code></code></pre>
+
+<table>
+<thead><tr><th>Namespace     </th><th>Method</th><th>N</th><th>Mean    </th><th>Error  </th><th>StdDev </th><th>Ratio</th><th>RatioSD</th><th>Rank</th><th>Gen0</th><th>Gen1</th><th>Allocated</th><th>Alloc Ratio</th>
+</tr>
+</thead><tbody><tr><td>Benchmarks.csharp_24</td><td>Grok</td><td>100</td><td>0.3188 ns</td><td>0.0123 ns</td><td>0.0096 ns</td><td>0.34</td><td>0.01</td><td>1</td><td>-</td><td>-</td><td>-</td><td>NA</td>
+</tr><tr><td>Benchmarks.csharp_24</td><td>Claude</td><td>100</td><td>0.3221 ns</td><td>0.0151 ns</td><td>0.0141 ns</td><td>0.34</td><td>0.02</td><td>1</td><td>-</td><td>-</td><td>-</td><td>NA</td>
+</tr><tr><td>Benchmarks.csharp_24</td><td>Gemini</td><td>100</td><td>0.3264 ns</td><td>0.0165 ns</td><td>0.0129 ns</td><td>0.35</td><td>0.02</td><td>1</td><td>-</td><td>-</td><td>-</td><td>NA</td>
+</tr><tr><td>Benchmarks.csharp_24</td><td>GPT</td><td>100</td><td>0.9392 ns</td><td>0.0251 ns</td><td>0.0210 ns</td><td>1.00</td><td>0.03</td><td>2</td><td>-</td><td>-</td><td>-</td><td>NA</td>
+</tr><tr><td>Benchmarks.csharp_21</td><td>Grok</td><td>100</td><td>68.0426 ns</td><td>0.5445 ns</td><td>0.4827 ns</td><td>72.48</td><td>1.60</td><td>3</td><td>-</td><td>-</td><td>-</td><td>NA</td>
+</tr><tr><td>Benchmarks.csharp_21</td><td>Claude</td><td>100</td><td>68.5952 ns</td><td>1.1551 ns</td><td>0.9646 ns</td><td>73.07</td><td>1.82</td><td>3</td><td>-</td><td>-</td><td>-</td><td>NA</td>
+</tr><tr><td>Benchmarks.csharp_21</td><td>Gemini</td><td>100</td><td>68.9108 ns</td><td>0.4836 ns</td><td>0.4287 ns</td><td>73.40</td><td>1.60</td><td>3</td><td>-</td><td>-</td><td>-</td><td>NA</td>
+</tr><tr><td>Benchmarks.csharp_21</td><td>GPT</td><td>100</td><td>69.1215 ns</td><td>0.3840 ns</td><td>0.3206 ns</td><td>73.63</td><td>1.58</td><td>3</td><td>-</td><td>-</td><td>-</td><td>NA</td>
+</tr><tr><td>Benchmarks.csharp_26</td><td>GPT</td><td>100</td><td>75.3564 ns</td><td>0.4469 ns</td><td>0.3732 ns</td><td>80.27</td><td>1.73</td><td>4</td><td>-</td><td>-</td><td>-</td><td>NA</td>
+</tr><tr><td>Benchmarks.csharp_26</td><td>Gemini</td><td>100</td><td>75.7413 ns</td><td>0.7706 ns</td><td>0.6831 ns</td><td>80.68</td><td>1.83</td><td>4</td><td>-</td><td>-</td><td>-</td><td>NA</td>
+</tr><tr><td>Benchmarks.csharp_26</td><td>Claude</td><td>100</td><td>76.1667 ns</td><td>0.7687 ns</td><td>0.7190 ns</td><td>81.13</td><td>1.86</td><td>4</td><td>-</td><td>-</td><td>-</td><td>NA</td>
+</tr><tr><td>Benchmarks.csharp_26</td><td>Grok</td><td>100</td><td>76.1927 ns</td><td>0.5132 ns</td><td>0.4006 ns</td><td>81.16</td><td>1.75</td><td>4</td><td>-</td><td>-</td><td>-</td><td>NA</td>
+</tr><tr><td>Benchmarks.csharp_30</td><td>Grok</td><td>100</td><td>136.4474 ns</td><td>0.7289 ns</td><td>0.6818 ns</td><td>145.35</td><td>3.13</td><td>5</td><td>-</td><td>-</td><td>-</td><td>NA</td>
+</tr><tr><td>Benchmarks.csharp_30</td><td>Gemini</td><td>100</td><td>154.6665 ns</td><td>0.8010 ns</td><td>0.7493 ns</td><td>164.75</td><td>3.54</td><td>6</td><td>-</td><td>-</td><td>-</td><td>NA</td>
+</tr><tr><td>Benchmarks.csharp_30</td><td>GPT</td><td>100</td><td>165.1645 ns</td><td>1.6469 ns</td><td>1.4599 ns</td><td>175.94</td><td>3.98</td><td>7</td><td>-</td><td>-</td><td>-</td><td>NA</td>
+</tr><tr><td>Benchmarks.csharp_27</td><td>GPT</td><td>100</td><td>171.7811 ns</td><td>1.5641 ns</td><td>1.4631 ns</td><td>182.98</td><td>4.12</td><td>8</td><td>-</td><td>-</td><td>-</td><td>NA</td>
+</tr><tr><td>Benchmarks.csharp_27</td><td>Gemini</td><td>100</td><td>193.6085 ns</td><td>1.6930 ns</td><td>1.4137 ns</td><td>206.23</td><td>4.56</td><td>9</td><td>-</td><td>-</td><td>-</td><td>NA</td>
+</tr><tr><td>Benchmarks.csharp_25</td><td>GPT</td><td>100</td><td>262.4702 ns</td><td>4.5057 ns</td><td>4.8211 ns</td><td>279.59</td><td>7.70</td><td>10</td><td>0.2904</td><td>-</td><td>456 B</td><td>NA</td>
+</tr><tr><td>Benchmarks.csharp_30</td><td>Claude</td><td>100</td><td>305.2808 ns</td><td>2.7169 ns</td><td>2.5414 ns</td><td>325.19</td><td>7.30</td><td>11</td><td>0.3209</td><td>-</td><td>504 B</td><td>NA</td>
+</tr><tr><td>Benchmarks.csharp_25</td><td>Grok</td><td>100</td><td>406.3895 ns</td><td>4.2353 ns</td><td>4.1597 ns</td><td>432.89</td><td>10.04</td><td>12</td><td>0.7548</td><td>-</td><td>1184 B</td><td>NA</td>
+</tr><tr><td>Benchmarks.csharp_25</td><td>Gemini</td><td>100</td><td>408.9405 ns</td><td>5.6012 ns</td><td>5.2394 ns</td><td>435.61</td><td>10.61</td><td>12</td><td>0.7548</td><td>-</td><td>1184 B</td><td>NA</td>
+</tr><tr><td>Benchmarks.csharp_23</td><td>Grok</td><td>100</td><td>494.2640 ns</td><td>2.9723 ns</td><td>2.6349 ns</td><td>526.50</td><td>11.37</td><td>13</td><td>-</td><td>-</td><td>-</td><td>NA</td>
+</tr><tr><td>Benchmarks.csharp_23</td><td>GPT</td><td>100</td><td>495.0589 ns</td><td>2.9002 ns</td><td>2.7129 ns</td><td>527.34</td><td>11.40</td><td>13</td><td>-</td><td>-</td><td>-</td><td>NA</td>
+</tr><tr><td>Benchmarks.csharp_23</td><td>Gemini</td><td>100</td><td>495.9006 ns</td><td>3.4291 ns</td><td>2.8634 ns</td><td>528.24</td><td>11.46</td><td>13</td><td>-</td><td>-</td><td>-</td><td>NA</td>
+</tr><tr><td>Benchmarks.csharp_27</td><td>Grok</td><td>100</td><td>510.3171 ns</td><td>3.4151 ns</td><td>2.8518 ns</td><td>543.60</td><td>11.77</td><td>13</td><td>-</td><td>-</td><td>-</td><td>NA</td>
+</tr><tr><td>Benchmarks.csharp_27</td><td>Claude</td><td>100</td><td>558.3380 ns</td><td>4.0445 ns</td><td>3.5854 ns</td><td>594.75</td><td>13.00</td><td>14</td><td>0.0200</td><td>-</td><td>32 B</td><td>NA</td>
+</tr><tr><td>Benchmarks.csharp_23</td><td>Claude</td><td>100</td><td>975.4758 ns</td><td>7.4862 ns</td><td>7.0026 ns</td><td>1,039.09</td><td>22.95</td><td>15</td><td>-</td><td>-</td><td>-</td><td>NA</td>
+</tr><tr><td>Benchmarks.csharp_25</td><td>Claude</td><td>100</td><td>1,306.5575 ns</td><td>16.3413 ns</td><td>14.4861 ns</td><td>1,391.76</td><td>32.77</td><td>16</td><td>0.8297</td><td>-</td><td>1304 B</td><td>NA</td>
+</tr><tr><td>Benchmarks.csharp_29</td><td>GPT</td><td>100</td><td>1,453.5710 ns</td><td>23.6191 ns</td><td>28.1169 ns</td><td>1,548.37</td><td>43.70</td><td>17</td><td>1.5297</td><td>-</td><td>2400 B</td><td>NA</td>
+</tr><tr><td>Benchmarks.csharp_29</td><td>Gemini</td><td>100</td><td>1,478.3939 ns</td><td>13.6118 ns</td><td>11.3665 ns</td><td>1,574.81</td><td>35.02</td><td>17</td><td>1.5297</td><td>-</td><td>2400 B</td><td>NA</td>
+</tr><tr><td>Benchmarks.csharp_29</td><td>Claude</td><td>100</td><td>1,481.2175 ns</td><td>9.8420 ns</td><td>8.2185 ns</td><td>1,577.82</td><td>34.14</td><td>17</td><td>1.5297</td><td>-</td><td>2400 B</td><td>NA</td>
+</tr><tr><td>Benchmarks.csharp_29</td><td>Grok</td><td>100</td><td>1,485.1319 ns</td><td>9.4466 ns</td><td>7.3752 ns</td><td>1,581.99</td><td>34.03</td><td>17</td><td>1.5297</td><td>-</td><td>2400 B</td><td>NA</td>
+</tr><tr><td>Benchmarks.csharp_28</td><td>GPT</td><td>100</td><td>2,654.3916 ns</td><td>38.9357 ns</td><td>34.5155 ns</td><td>2,827.50</td><td>69.11</td><td>18</td><td>4.7073</td><td>-</td><td>7392 B</td><td>NA</td>
+</tr><tr><td>Benchmarks.csharp_22</td><td>Grok</td><td>100</td><td>4,281.6296 ns</td><td>34.3270 ns</td><td>32.1095 ns</td><td>4,560.86</td><td>101.18</td><td>19</td><td>2.9526</td><td>-</td><td>4640 B</td><td>NA</td>
+</tr><tr><td>Benchmarks.csharp_22</td><td>Claude</td><td>100</td><td>4,350.8378 ns</td><td>83.0149 ns</td><td>69.3212 ns</td><td>4,634.58</td><td>120.46</td><td>19</td><td>2.9526</td><td>-</td><td>4640 B</td><td>NA</td>
+</tr><tr><td>Benchmarks.csharp_22</td><td>Gemini</td><td>100</td><td>4,373.7486 ns</td><td>83.2419 ns</td><td>73.7917 ns</td><td>4,658.98</td><td>123.74</td><td>19</td><td>2.9526</td><td>-</td><td>4640 B</td><td>NA</td>
+</tr><tr><td>Benchmarks.csharp_22</td><td>GPT</td><td>100</td><td>4,454.7741 ns</td><td>87.4793 ns</td><td>93.6018 ns</td><td>4,745.29</td><td>138.99</td><td>19</td><td>5.3024</td><td>-</td><td>8328 B</td><td>NA</td>
+</tr><tr><td>Benchmarks.csharp_28</td><td>Gemini</td><td>100</td><td>6,150.4237 ns</td><td>63.5433 ns</td><td>59.4384 ns</td><td>6,551.52</td><td>150.40</td><td>20</td><td>7.1106</td><td>-</td><td>11160 B</td><td>NA</td>
+</tr><tr><td>Benchmarks.csharp_28</td><td>Claude</td><td>100</td><td>8,885.3218 ns</td><td>95.7382 ns</td><td>74.7461 ns</td><td>9,464.78</td><td>212.75</td><td>21</td><td>11.8866</td><td>-</td><td>18648 B</td><td>NA</td>
+</tr><tr><td>Benchmarks.csharp_28</td><td>Grok</td><td>100</td><td>8,918.9813 ns</td><td>98.4116 ns</td><td>87.2393 ns</td><td>9,500.63</td><td>218.49</td><td>21</td><td>11.8561</td><td>-</td><td>18600 B</td><td>NA</td>
+</tr><tr><td>Benchmarks.csharp_24</td><td>Claude</td><td>1000</td><td>0.3152 ns</td><td>0.0224 ns</td><td>0.0175 ns</td><td>0.34</td><td>0.02</td><td>1</td><td>-</td><td>-</td><td>-</td><td>NA</td>
+</tr><tr><td>Benchmarks.csharp_24</td><td>Gemini</td><td>1000</td><td>0.3202 ns</td><td>0.0109 ns</td><td>0.0097 ns</td><td>0.35</td><td>0.01</td><td>1</td><td>-</td><td>-</td><td>-</td><td>NA</td>
+</tr><tr><td>Benchmarks.csharp_24</td><td>Grok</td><td>1000</td><td>0.3285 ns</td><td>0.0354 ns</td><td>0.0296 ns</td><td>0.36</td><td>0.03</td><td>1</td><td>-</td><td>-</td><td>-</td><td>NA</td>
+</tr><tr><td>Benchmarks.csharp_24</td><td>GPT</td><td>1000</td><td>0.9190 ns</td><td>0.0164 ns</td><td>0.0146 ns</td><td>1.00</td><td>0.02</td><td>2</td><td>-</td><td>-</td><td>-</td><td>NA</td>
+</tr><tr><td>Benchmarks.csharp_21</td><td>Grok</td><td>1000</td><td>617.8912 ns</td><td>2.1002 ns</td><td>1.6397 ns</td><td>672.49</td><td>10.31</td><td>3</td><td>-</td><td>-</td><td>-</td><td>NA</td>
+</tr><tr><td>Benchmarks.csharp_21</td><td>GPT</td><td>1000</td><td>619.1586 ns</td><td>2.8251 ns</td><td>2.5044 ns</td><td>673.87</td><td>10.52</td><td>3</td><td>-</td><td>-</td><td>-</td><td>NA</td>
+</tr><tr><td>Benchmarks.csharp_21</td><td>Gemini</td><td>1000</td><td>619.8713 ns</td><td>4.0933 ns</td><td>3.6286 ns</td><td>674.64</td><td>10.88</td><td>3</td><td>-</td><td>-</td><td>-</td><td>NA</td>
+</tr><tr><td>Benchmarks.csharp_21</td><td>Claude</td><td>1000</td><td>620.5202 ns</td><td>4.2797 ns</td><td>4.0032 ns</td><td>675.35</td><td>11.04</td><td>3</td><td>-</td><td>-</td><td>-</td><td>NA</td>
+</tr><tr><td>Benchmarks.csharp_26</td><td>Gemini</td><td>1000</td><td>716.2746 ns</td><td>5.4257 ns</td><td>4.8098 ns</td><td>779.57</td><td>12.82</td><td>4</td><td>-</td><td>-</td><td>-</td><td>NA</td>
+</tr><tr><td>Benchmarks.csharp_26</td><td>GPT</td><td>1000</td><td>716.9939 ns</td><td>6.9160 ns</td><td>6.1309 ns</td><td>780.35</td><td>13.44</td><td>4</td><td>-</td><td>-</td><td>-</td><td>NA</td>
+</tr><tr><td>Benchmarks.csharp_26</td><td>Grok</td><td>1000</td><td>717.4572 ns</td><td>7.7325 ns</td><td>6.4570 ns</td><td>780.85</td><td>13.61</td><td>4</td><td>-</td><td>-</td><td>-</td><td>NA</td>
+</tr><tr><td>Benchmarks.csharp_26</td><td>Claude</td><td>1000</td><td>717.6249 ns</td><td>6.5360 ns</td><td>5.4579 ns</td><td>781.03</td><td>13.12</td><td>4</td><td>-</td><td>-</td><td>-</td><td>NA</td>
+</tr><tr><td>Benchmarks.csharp_30</td><td>Grok</td><td>1000</td><td>1,205.3525 ns</td><td>6.3907 ns</td><td>5.9778 ns</td><td>1,311.86</td><td>20.80</td><td>5</td><td>-</td><td>-</td><td>-</td><td>NA</td>
+</tr><tr><td>Benchmarks.csharp_30</td><td>Gemini</td><td>1000</td><td>1,368.5541 ns</td><td>5.8934 ns</td><td>5.5127 ns</td><td>1,489.48</td><td>23.24</td><td>6</td><td>-</td><td>-</td><td>-</td><td>NA</td>
+</tr><tr><td>Benchmarks.csharp_27</td><td>GPT</td><td>1000</td><td>1,446.4197 ns</td><td>9.3528 ns</td><td>8.2910 ns</td><td>1,574.23</td><td>25.33</td><td>7</td><td>-</td><td>-</td><td>-</td><td>NA</td>
+</tr><tr><td>Benchmarks.csharp_27</td><td>Gemini</td><td>1000</td><td>1,495.4458 ns</td><td>16.4619 ns</td><td>13.7464 ns</td><td>1,627.58</td><td>28.51</td><td>7</td><td>-</td><td>-</td><td>-</td><td>NA</td>
+</tr><tr><td>Benchmarks.csharp_30</td><td>GPT</td><td>1000</td><td>1,528.7061 ns</td><td>6.4388 ns</td><td>5.7079 ns</td><td>1,663.78</td><td>25.85</td><td>7</td><td>-</td><td>-</td><td>-</td><td>NA</td>
+</tr><tr><td>Benchmarks.csharp_30</td><td>Claude</td><td>1000</td><td>2,306.5213 ns</td><td>39.9950 ns</td><td>42.7942 ns</td><td>2,510.33</td><td>59.11</td><td>8</td><td>2.6169</td><td>-</td><td>4104 B</td><td>NA</td>
+</tr><tr><td>Benchmarks.csharp_25</td><td>GPT</td><td>1000</td><td>2,396.9161 ns</td><td>36.1122 ns</td><td>41.5869 ns</td><td>2,608.71</td><td>59.20</td><td>8</td><td>2.5826</td><td>-</td><td>4056 B</td><td>NA</td>
+</tr><tr><td>Benchmarks.csharp_25</td><td>Gemini</td><td>1000</td><td>3,064.0353 ns</td><td>22.9065 ns</td><td>19.1280 ns</td><td>3,334.78</td><td>54.24</td><td>9</td><td>5.3749</td><td>-</td><td>8424 B</td><td>NA</td>
+</tr><tr><td>Benchmarks.csharp_25</td><td>Grok</td><td>1000</td><td>3,068.5732 ns</td><td>36.3936 ns</td><td>32.2619 ns</td><td>3,339.71</td><td>60.81</td><td>9</td><td>5.3749</td><td>-</td><td>8424 B</td><td>NA</td>
+</tr><tr><td>Benchmarks.csharp_27</td><td>Grok</td><td>1000</td><td>4,736.6452 ns</td><td>22.8269 ns</td><td>19.0615 ns</td><td>5,155.18</td><td>80.43</td><td>10</td><td>-</td><td>-</td><td>-</td><td>NA</td>
+</tr><tr><td>Benchmarks.csharp_23</td><td>GPT</td><td>1000</td><td>4,822.9955 ns</td><td>23.2138 ns</td><td>20.5784 ns</td><td>5,249.16</td><td>82.21</td><td>10</td><td>-</td><td>-</td><td>-</td><td>NA</td>
+</tr><tr><td>Benchmarks.csharp_23</td><td>Gemini</td><td>1000</td><td>4,828.9540 ns</td><td>24.7051 ns</td><td>23.1092 ns</td><td>5,255.64</td><td>83.05</td><td>10</td><td>-</td><td>-</td><td>-</td><td>NA</td>
+</tr><tr><td>Benchmarks.csharp_23</td><td>Grok</td><td>1000</td><td>4,841.3091 ns</td><td>47.7218 ns</td><td>44.6390 ns</td><td>5,269.09</td><td>92.47</td><td>10</td><td>-</td><td>-</td><td>-</td><td>NA</td>
+</tr><tr><td>Benchmarks.csharp_27</td><td>Claude</td><td>1000</td><td>5,102.0459 ns</td><td>37.9202 ns</td><td>35.4706 ns</td><td>5,552.87</td><td>91.85</td><td>11</td><td>0.0153</td><td>-</td><td>32 B</td><td>NA</td>
+</tr><tr><td>Benchmarks.csharp_23</td><td>Claude</td><td>1000</td><td>9,674.9791 ns</td><td>72.6758 ns</td><td>64.4252 ns</td><td>10,529.87</td><td>172.93</td><td>12</td><td>-</td><td>-</td><td>-</td><td>NA</td>
+</tr><tr><td>Benchmarks.csharp_25</td><td>Claude</td><td>1000</td><td>10,870.2000 ns</td><td>114.6524 ns</td><td>101.6364 ns</td><td>11,830.70</td><td>208.28</td><td>13</td><td>5.4321</td><td>-</td><td>8544 B</td><td>NA</td>
+</tr><tr><td>Benchmarks.csharp_29</td><td>Claude</td><td>1000</td><td>14,755.8587 ns</td><td>139.9649 ns</td><td>124.0752 ns</td><td>16,059.70</td><td>275.52</td><td>14</td><td>15.2893</td><td>-</td><td>24000 B</td><td>NA</td>
+</tr><tr><td>Benchmarks.csharp_29</td><td>Grok</td><td>1000</td><td>14,757.3790 ns</td><td>135.3633 ns</td><td>126.6189 ns</td><td>16,061.35</td><td>276.93</td><td>14</td><td>15.2893</td><td>-</td><td>24000 B</td><td>NA</td>
+</tr><tr><td>Benchmarks.csharp_29</td><td>Gemini</td><td>1000</td><td>14,783.1709 ns</td><td>143.7604 ns</td><td>127.4399 ns</td><td>16,089.42</td><td>277.60</td><td>14</td><td>15.2893</td><td>-</td><td>24000 B</td><td>NA</td>
+</tr><tr><td>Benchmarks.csharp_29</td><td>GPT</td><td>1000</td><td>17,015.6681 ns</td><td>134.0831 ns</td><td>125.4214 ns</td><td>18,519.19</td><td>309.44</td><td>15</td><td>15.2893</td><td>-</td><td>24000 B</td><td>NA</td>
+</tr><tr><td>Benchmarks.csharp_28</td><td>GPT</td><td>1000</td><td>25,070.0915 ns</td><td>302.3606 ns</td><td>268.0348 ns</td><td>27,285.30</td><td>499.42</td><td>16</td><td>46.5088</td><td>-</td><td>73168 B</td><td>NA</td>
+</tr><tr><td>Benchmarks.csharp_22</td><td>GPT</td><td>1000</td><td>44,086.7295 ns</td><td>699.5572 ns</td><td>654.3663 ns</td><td>47,982.27</td><td>1,000.62</td><td>17</td><td>51.2695</td><td>-</td><td>80528 B</td><td>NA</td>
+</tr><tr><td>Benchmarks.csharp_22</td><td>Claude</td><td>1000</td><td>44,771.5449 ns</td><td>461.1174 ns</td><td>385.0539 ns</td><td>48,727.59</td><td>839.87</td><td>17</td><td>24.4751</td><td>-</td><td>38616 B</td><td>NA</td>
+</tr><tr><td>Benchmarks.csharp_22</td><td>Gemini</td><td>1000</td><td>45,665.5371 ns</td><td>564.9756 ns</td><td>528.4785 ns</td><td>49,700.58</td><td>934.94</td><td>17</td><td>24.4751</td><td>-</td><td>38616 B</td><td>NA</td>
+</tr><tr><td>Benchmarks.csharp_22</td><td>Grok</td><td>1000</td><td>45,696.4348 ns</td><td>331.5826 ns</td><td>276.8865 ns</td><td>49,734.21</td><td>805.78</td><td>17</td><td>24.4751</td><td>-</td><td>38616 B</td><td>NA</td>
+</tr><tr><td>Benchmarks.csharp_28</td><td>Gemini</td><td>1000</td><td>62,121.7751 ns</td><td>1,241.7625 ns</td><td>1,933.2747 ns</td><td>67,610.91</td><td>2,310.88</td><td>18</td><td>59.5703</td><td>8.0566</td><td>104744 B</td><td>NA</td>
+</tr><tr><td>Benchmarks.csharp_28</td><td>Claude</td><td>1000</td><td>92,942.7584 ns</td><td>1,769.1135 ns</td><td>1,477.2899 ns</td><td>101,155.26</td><td>2,176.49</td><td>19</td><td>78.3691</td><td>19.5313</td><td>178008 B</td><td>NA</td>
+</tr><tr><td>Benchmarks.csharp_28</td><td>Grok</td><td>1000</td><td>93,240.5552 ns</td><td>802.2518 ns</td><td>711.1753 ns</td><td>101,479.37</td><td>1,706.02</td><td>19</td><td>77.8809</td><td>19.4092</td><td>177960 B</td><td>NA</td>
+</tr></tbody></table>
+</body>
+</html>
